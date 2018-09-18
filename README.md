@@ -1,3 +1,3 @@
 # BEPAL
 
-°ïÖúDAPP¿ª·¢Õß½ÓÈë BEPAL APP
+å¸®åŠ©DAPPå¼€å‘è€…æŽ¥å…¥ BEPAL APP
