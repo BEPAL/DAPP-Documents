@@ -1,11 +1,11 @@
-### app、navbar
+# app、navbar
 
 ------------
-#### 介绍
+## 介绍
 bepal app 提供了一系列调用原生方法模块的接口，方便 DApp 调用包括但不限于以下的接口。
 
 ------------
-#### navbar.toggleNavbar
+## navbar.toggleNavbar
 bepal app 通过内置浏览器打开DApp，最上面会有一个导航栏，用户可进行一些操作，如后退，刷新，关闭等。但某些DApp 需要全屏显示或已自实现导航功能，可调用此api 隐藏导航栏
 
 调用示例
@@ -14,7 +14,7 @@ bepal app 通过内置浏览器打开DApp，最上面会有一个导航栏，用
 bepal.callAPP('navbar.toggleNavbar');
 ```
 ------------
-#### navbar.closeDapp
+## navbar.closeDapp
 
 DApp 调用此api后，app会 关闭当前 DApp 页面，返回到 DApp列表页
 
@@ -24,14 +24,14 @@ DApp 调用此api后，app会 关闭当前 DApp 页面，返回到 DApp列表页
 bepal.callAPP('navbar.closeDapp');
 ```
 ------------
-#### navbar.goBack
+## navbar.goBack
 返回到历史记录的上一页， 类似 history.go(-1) 如果没有上一页，则直接关闭dapp，等同于navbar.closeDapp
 
 ```javascript
 bepal.callAPP('navbar.goBack');
 ```
 ------------
-#### app.toast
+## app.toast
 app 的轻弹框提示
 参数说明：
 
@@ -45,7 +45,7 @@ app 的轻弹框提示
 bepal.callAPP('app.toast','I am Bepal !');
 ```
 ------------
-#### app.confirm
+## app.confirm
 app的确认框, 如果用户点击了 取消 按钮， 将会返回一个 error 对象。
 
 |  参数 | 类型  | 是否可空  | 说明  |
@@ -73,7 +73,7 @@ bepal.callAPP('app.confirm',params , function (error, result) {
 }) ;
 ```
 ------------
-#### app.setClipboard
+## app.setClipboard
 设置文本到用户剪贴板
 参数说明：
 
@@ -86,7 +86,7 @@ bepal.callAPP('app.confirm',params , function (error, result) {
 ```javascript
 bepal.callAPP('app.setClipboard','I am Bepal !');
 ```
-#### app.scanQRCode
+## app.scanQRCode
 打开手机摄像头, 返回二维码的文本内容
 
 ```javascript
@@ -100,7 +100,7 @@ bepal.callAPP('app.scanQRCode', function (error, result) {
 ```
 
 ------------
-#### app.getCurrentLanguage
+## app.getCurrentLanguage
 获取用户当前的语言设置，如果 DApp 需要支持多语言
 
 调用示例
@@ -115,7 +115,7 @@ bepal.callAPP('app.getCurrentLanguage', function (error, result) {
 }) ;
 ```
 ------------
-#### app.getCurrentCurrency
+## app.getCurrentCurrency
 获取用户当前的货币单位设置
 
 调用示例

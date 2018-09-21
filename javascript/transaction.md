@@ -1,11 +1,11 @@
-### transaction
+# transaction
 
 ------------
-#### 介绍
+## 介绍
 DApp 最频繁的操作是发送一笔交易，此章节介绍了如何发送一笔交易。现支持ETH 和 EOS 的交易发送。DAPP 调用交易发送API 后，APP 会显示一个modal 弹窗让用户确认交易信息，用户确认后根据选择的钱包进行接下来的签名操作，签名后调用APP 的交易发送操作，广播该笔交易。交易成功后，APP 会将交易标识（txid）通过回调方法返回给DApp，如果发生错误或者用户取消操作等，会返回error对象，error包含code及message属性。DApp 根据返回值再进行相应的业务流程操作。
 
 ------------
-#### eth.bepalPay
+## eth.bepalPay
 以太坊交易
 
 params参数说明：
@@ -35,7 +35,7 @@ bepal.callAPP('eth.bepalPay', params, function (error, txid) {
 });
 ```
 ------------
-#### eos.bepalPay
+## eos.bepalPay
 eos 交易
 
 params参数说明：
@@ -63,5 +63,5 @@ bepal.callAPP('eos.bepalPay', params, function (error, txid) {
 });
 ```
 ------------
-#### eos.bepalTokenPay
+## eos.bepalTokenPay
 EOS 其他代币交易，敬请期待
