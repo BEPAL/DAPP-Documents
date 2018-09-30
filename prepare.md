@@ -5,7 +5,7 @@
 2. DAPP超链接应当使用 **https**
 
 
-- [下载BEPAL Wallet](#下载BEPAL Wallet)
+- 下载BEPAL Wallet
 - [开启开发者模式](#开启开发者模式)
 - [添加外部DAPP](#添加外部DAPP)
 - [引用](#引用)
