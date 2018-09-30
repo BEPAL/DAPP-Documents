@@ -14,7 +14,7 @@
 
 # 下载BEPAL Wallet
 
-![下载APP](images/app/download.png)
+[![下载APP](images/app/download.png)](https://www.bepal.pro/Download)
 
 # 开启开发者模式
 
