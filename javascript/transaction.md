@@ -52,7 +52,9 @@ params参数说明：
 var params = {
   to: '目标账户',
   from: '用户账户',
-  value: '10.0000'
+  value: '10.0000',
+  contract: 'eosio.token'
+
 };
 bepal.callAPP('eos.bepalPay', params, function (error, txid) {
   if (error) {
@@ -64,4 +66,36 @@ bepal.callAPP('eos.bepalPay', params, function (error, txid) {
 ```
 ------------
 ## eos.bepalTokenPay
-EOS 其他代币交易，敬请期待
+eos 合约交易
+
+params参数说明：
+
+| 参数  | 类型  | 是否可空  | 说明  |
+| ------------ | ------------ | ------------ | ------------ |
+| to  |  string | 否  | 调用合约名  |
+| from  |  string |  否 |  交易源地址，通常是用户的钱包内相关地址，可通过app.getCurrentAccount 获取 |
+| funName | string | 否 | 合约方法名 |
+| content | string | 否 | 16进制数据 合约内容数据 |
+| data | string | 否 | 合约方法列表 |
+
+调用示例
+
+```javascript
+var params = {
+  to: '调用合约账户',
+  from: '用户账户',
+  data : [ {
+ 	funName: "调用方法名",
+  	content : '16进制数据 合约内容数据'
+	}
+  ]
+};
+bepal.callAPP('eos.bepalTokenPay', params, function (error, txid) {
+  if (error) {
+    alert('code='+error.code+',message='+error.message);
+  } else {
+    alert(txid);
+  }
+});
+```
+

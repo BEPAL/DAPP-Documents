@@ -101,7 +101,7 @@ bepal.callAPP('app.scanQRCode', function (error, result) {
 
 ------------
 ## app.getCurrentLanguage
-获取用户当前的语言设置，如果 DApp 需要支持多语言
+获取用户当前的语言设置，如果 DApp 需要支持多语言 zh_CN、en_US、zh_TW
 
 调用示例
 
