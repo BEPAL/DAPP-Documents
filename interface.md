@@ -1,3 +1,15 @@
+# User-Agent
+
+- Android
+  Mozilla/5.0 (Linux; Android 8.1.0; Pixel 2 XL Build/OPM1.171019.013; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 :bepalhotwallet:3.2.0:zh_CN
+
+- iPhone User-Agent 请求头
+  Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_3 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G34 :bepalhotwallet:3.2.0:en_US
+
+:应用类型:应用版本:应用语言
+
+
+
 # 接口文档
 
 - [币种交易](#币种交易)
